@@ -45,6 +45,7 @@ void *threadRoutine(void *args) {
 int main(int argc, char** argv) {
 
   if(argc != 3){
+    printf("Uso: %s <numero de hebras> <numero de etapas>\n", argv[0]);
     exit(0);
   }
   nHebras = atoi(argv[1]);
